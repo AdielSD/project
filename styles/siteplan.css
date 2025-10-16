@@ -1,100 +1,32 @@
 /*---------------------------------------
-          📱 RESPONSIVE ADAPTATION
-----------------------------------------*/
-/*---------------------------------------
-  🍔 MOBILE NAVIGATION (HAMBURGER MENU)
-----------------------------------------*/
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: #0077b6;
-  cursor: pointer;
-}
-
-/* Hide menu links by default on small screens */
-.nav-links {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 1rem;
-  transition: all 0.3s ease;
-}
-
-/* Mobile view */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
-    z-index: 1001;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 70px; /* Adjust if header height changes */
-    right: 0;
-    width: 100%;
-    background-color: #fff;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.5rem 0;
-    display: none;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .navbar a {
-    font-size: 1.1rem;
-    width: 100%;
-    text-align: center;
-    border-radius: 0;
-    padding: 1rem 0;
-  }
-
-  /* Optional: animate the hamburger to an "X" */
-  .menu-toggle.open::before {
-    content: "✖";
-  }
-
-  /* Hide default hamburger when open */
-  .menu-toggle.open {
-    color: #f5d000;
-  }
-}
-
-
-
-/*---------------------------------------
       📱 HAMBURGER NAV MENU
 ----------------------------------------*/
 
-/* Hide close button initially */
+/* Hide both icons by default (desktop view) */
+.menu-toggle,
 .close-menu {
   display: none;
-}
-
-/* Hamburger button */
-.menu-toggle, .close-menu {
   background: none;
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: white;
   position: absolute;
   top: 1rem;
   right: 1.5rem;
   z-index: 999;
+  color: #0077b6; /* Change to white if your header is dark */
 }
 
-/* Navbar default hidden on mobile */
+/*---------------------------------------
+      📱 MOBILE VIEW
+----------------------------------------*/
 @media (max-width: 768px) {
+  /* Show the hamburger icon only on mobile */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide navbar initially */
   .navbar {
     display: none;
     position: fixed;
@@ -121,12 +53,13 @@
     text-decoration: none;
   }
 
+  /* When the menu is toggled open */
   .navbar.show {
     display: flex;
     animation: fadeIn 0.3s ease-in;
   }
 
-  /* Axis (X) shows only when nav is open */
+  /* Show X button only when nav is open */
   .close-menu.show {
     display: block;
   }
@@ -137,7 +70,7 @@
   }
 }
 
-/* Small animation */
+/* Fade-in animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
