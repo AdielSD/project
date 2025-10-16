@@ -7,82 +7,213 @@
     <meta name="author" content=" Sephora Diaz">
     <meta name="description" content="This is a draft or baseline for my final website project.">
 
+    <!--FONT LINKS-->
+
+    <!--ROBOTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--OPEN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--BUNGEE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+
+
     <link rel="stylesheet" href="styles/siteplan.css">
     <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
 
-    <script src="scripts/siteplan.js" defer></script>
+     <script src="scripts/swiper-bundle.min.js" defer></script>
+     <script src="scripts/siteplan.js" defer></script>
+     <script src="scripts/navbar.js" defer></script>
+   
 </head>
 <body>
     <header>
+         
+       
 
-        <h2 id="websiteTile">OSEL Academy</h2>
-        <img src="images/logo-osel.png">
+
+        <img src="images/logo-osel.png" class="logo-osel" href="index.html">
+
+        <h2 class="websiteTitle">OSEL Academy</h2>
+
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <button id="close-menu" class="close-menu">✖</button>
+        
+
+        <div class="links">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" id="Home">Home</a></li>
+                    <li><a href="activities.html" id="activities">activities</a></li>
+                    <li><a href="#q-a-section" id="qna">Q&A</a></li>
+                    
+                    <li><a href="login.html" class="Log-in">Log in</a></li>
+                    <li><a href="signup.html" class="Sign-up">Sign up</a></li>
+                </ul>
+            </nav>
+            
+        </div>
 
     </header>
 
     <main>
 
-        <section>
-            <h2>OSEL Academy</h2>
-        <p>The name OSEL is an acronym for the long name of Online School English Learning Academy, the name 
-            represents an online community for language learners around the world</p>
+    
+        <section class="intro-banner">
+
+            <div class="banner-image">
+            <img 
+            src="images/banner1-phone.webp" 
+            srcset="images/banner1.webp 1200w, images/banner1-phone.webp 600w"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Banner image introduction">
+        </div> 
+
+        <div class="introduction">
+            <h2>OSEL Academy</h2>   
+            <p>At OSEL Academy, we believe learning a new language is more than just memorizing words; it’s about opening doors 
+        to new cultures, friendships, and opportunities around the world. 
+        Our community welcomes learners of all ages and backgrounds to explore, practice, and grow together in a supportive 
+        environment. Whether your goal is to travel, work internationally, or connect with people globally, OSEL Academy is 
+        here to guide and inspire you every step of the way.</p>
+
+        </div>
 
         </section>
 
-        <section>
+        <section class="purpose">
 
             <h2>Site purpose</h2>
-        <p>The sites purpose is for language learner enthusiasts to have easy access to the materials and sources
-            provided for Learning and practice with other students
+        <p>The purpose of this website is to empower language learners by providing a comprehensive, accessible, and interactive 
+        platform where knowledge meets opportunity. Here, students can explore curated lessons, practice exercises, and 
+        real-world materials designed to strengthen their skills. 
+        Beyond just learning, our goal is to inspire confidence, encourage curiosity, and build a sense of belonging among learners 
+        from around the globe. At OSEL Academy, every student’s journey matters — and every milestone is celebrated.
         </p>
 
         </section>
 
-       <h2>Q&A</h2>
+<section class="testimonials">
+  <h2 class="testimonials__title">WHAT <br>CUSTOMERS SAY</h2>
 
-        <section id="scenarios">
-    <h3>Scenarios</h3>
-    <ul>
-        <li><strong>Question 1:</strong> How can I join OSEL Academy and start learning a new language?</li>
-        <li><strong>Question 2:</strong> Are there any free resources or practice activities available for beginners?</li>
-        <li><strong>Question 3:</strong> Can I connect with other learners to practice speaking and improve my skills?</li>
-    </ul>
+  <div class="testimonial__swiper swiper">
+    <div class="swiper-wrapper">
+      
+      <article class="testimonial-card swiper-slide">
+        <img src="images/avatar-1.png" alt="image" class="testimonial__img">
+        <h3 class="name">Ana L.</h3>
+        <div class="testimonial-rating">
+          <div class="stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <h3 class="testimonial-number">5.0</h3>
+          </div>
+          <p class="tdescription">OSEL Academy transformed the way I view learning! I made friends worldwide and gained confidence speaking English.</p>
+        </div>
+      </article>
 
-    <h3>Answers</h3>
-    <p><strong>Answer 1:</strong> You can easily join OSEL Academy by creating an account through our registration page. Once registered, you’ll gain access to all available learning materials.</p>
-    <p><strong>Answer 2:</strong> Yes! The site includes free downloadable worksheets, grammar lessons, and pronunciation guides designed for beginner, intermediate, and advanced learners.</p>
-    <p><strong>Answer 3:</strong> OSEL Academy provides online discussion forums and group chat options where learners can interact, share experiences, and practice together.</p>
+      <article class="testimonial-card swiper-slide">
+        <img src="images/avatar-2.png" alt="image" class="testimonial__img">
+        <h3 class="name">David M.</h3>
+        <div class="testimonial-rating">
+          <div class="stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <h3 class="testimonial-number">5.0</h3>
+          </div>
+          <p class="tdescription">Thanks to OSEL Academy, I was able to prepare for my international exams and succeed!</p>
+        </div>
+      </article>
+
+      <article class="testimonial-card swiper-slide">
+        <img src="images/avatar-3.png" alt="image" class="testimonial__img">
+        <h3 class="name">Mei C.</h3>
+        <div class="testimonial-rating">
+          <div class="stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <h3 class="testimonial-number">5.0</h3>
+          </div>
+          <p class="tdescription">Learning with OSEL Academy inspired me to explore new cultures and communicate globally!</p>
+        </div>
+      </article>
+
+      <article class="testimonial-card swiper-slide">
+        <img src="images/avatar-4.png" alt="image" class="testimonial__img">
+        <h3 class="name">Luis R.</h3>
+        <div class="testimonial-rating">
+          <div class="stars">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <h3 class="testimonial-number">5.0</h3>
+          </div>
+          <p class="tdescription">The interactive lessons and supportive community helped me finally improve my pronunciation and grammar.</p>
+        </div>
+      </article>
+
+    </div> 
+
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
 </section>
-<h2>Color Scheme</h2>
 
- <section class="colorboxes">
+
+    <!-- 4️⃣ How to Get Started / Quick Steps -->
+    <section class="get-started">
+        <h2>Get Started in 3 Easy Steps</h2>
+        <ol>
+            <li>Create your free OSEL Academy account</li>
+            <li>Explore lessons and activities at your level</li>
+            <li>Connect with other students and start practicing</li>
+        </ol>
+    </section>
+
+    <!-- 5️⃣ Call to Action / Motivation Banner -->
+    <section class="call-to-action">
+        <h2>Ready to Explore the World Through Language?</h2>
+        <p>Join OSEL Academy today and start your journey towards mastery, confidence, and global connections!</p>
+        <a href="sign-up.html" class="Sign-up">Sign Up Now</a>
+    </section>
+
+    <!-- 6️⃣ Q&A / Scenarios -->
     
-    <p>Main Color: <span class="colorbox-main">#000000 (used for navbar and footer)</span></p>
-    <p>Accent Color: <span class="colorbox-accent">#f5d000 (used for hovers and buttons)</span></p>
-    <p>Text Color: <span class="colorbox-text">#003d7a (used for headers and subtitles )</span></p>
-    <p>Decorations Color: <span class="colorbox-decorations">#f5f5f5 (used for highlighting text and background)</span></p>
- </section>
+    <section id="q-a-section" class="scenarios">
+        <h2>Q&A</h2>
+        <h3>Scenarios</h3>
+        <ul>
+            <li><strong>Question 1:</strong> How can I join OSEL Academy and start learning a new language?</li>
+            <li><strong>Question 2:</strong> Are there any free resources or practice activities available for beginners?</li>
+            <li><strong>Question 3:</strong> Can I connect with other learners to practice speaking and improve my skills?</li>
+        </ul>
 
- <section>
-    <h2>Typography</h2>
-    <p><strong>Main heading or special display:</strong> 'Bungee Spice, sans-serif'</p>
-    <p><strong>Subheadings:</strong>'Roboto, sans-serif'</p>
-    <p><strong>Body text:</strong>'Open Sans, sans-serif'</p>
- </section>
+        <h3>Answers</h3>
+        <p><strong>Answer 1:</strong> You can easily join OSEL Academy by creating an account through our registration page. Once registered, you’ll gain access to all available learning materials.</p>
+        <p><strong>Answer 2:</strong> Yes! The site includes free downloadable worksheets, grammar lessons, and pronunciation guides designed for beginner, intermediate, and advanced learners.</p>
+        <p><strong>Answer 3:</strong> OSEL Academy provides online discussion forums and group chat options where learners can interact, share experiences, and practice together.</p>
+    </section>
 
-<h2>Wireframe</h2>
 
-<section class="wireframes">
-    <div class="frame">
-        <h3>Mobile View</h3>
-        <img src="images/website draft (phone view).drawio.png" alt="Mobile wireframe">
-    </div>
-
-    <div class="frame">
-        <h3>Desktop View</h3>
-        <img src="images/website draft.drawio.png" alt="Desktop wireframe">
-    </div>
-</section>
 
 
     </main>
