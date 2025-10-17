@@ -41,7 +41,7 @@ header {
 .websiteTitle {
   color: #fff;
   font-family: 'Bungee', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 100;
 }
 
@@ -304,8 +304,8 @@ article p {
               GET STARTED SECTION
 ----------------------------------------*/
 .get-started {
-  width: 100%;
-  padding: 7rem 6rem;
+
+  padding: 5rem 1.5rem;
   text-align: center;
   color: #fff;
   background: linear-gradient(135deg, #00b4d8, #0077b6, #90e0ef, #caf0f8);
@@ -317,6 +317,7 @@ article p {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+
 }
 
 .get-started.visible {
@@ -343,6 +344,8 @@ article p {
   border-radius: 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+   margin: 0 auto;
+  max-width: 90%;
 }
 
 .get-started ol li {
@@ -360,8 +363,7 @@ article p {
           GET STARTED
 ----------------------------------------*/
 .get-started {
-  width: 100%;
-  padding: 7rem 6rem;
+  padding: 5rem 2rem;
   text-align: center;
   color: #fff;
   background: linear-gradient(135deg, #00b4d8, #0096c7, #48cae4, #8ecae6);
@@ -398,7 +400,7 @@ article p {
 ----------------------------------------*/
 .call-to-action {
   width: 100%;
-  padding: 8rem 6rem;
+  padding: 5rem 1.5rem;
   text-align: center;
   color: #fff;
   background: linear-gradient(135deg, #ff006e, #fb5607, #ffb703, #ff9e00);
