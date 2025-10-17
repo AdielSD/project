@@ -65,47 +65,8 @@ const swiperTestimonial = new Swiper('.testimonial__swiper', {
 });
 
 
-// ACTIVITIES
 
-        const englishButtons = document.querySelectorAll('#english button');
-        const spanishButtons = document.querySelectorAll('#spanish button');
-        const scoreDisplay = document.getElementById('score');
-        let firstChoice = null;
-        let score = 0;
 
-        function resetSelection() {
-            englishButtons.forEach(b => b.classList.remove('selected'));
-            spanishButtons.forEach(b => b.classList.remove('selected'));
-            firstChoice = null;
-        }
-
-        englishButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                resetSelection();
-                button.classList.add('selected');
-                firstChoice = { lang: 'english', word: button.dataset.word, button };
-            });
-        });
-
-        spanishButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                if (!firstChoice) return;
-                if (firstChoice.word === button.dataset.word) {
-                    button.classList.add('correct');
-                    firstChoice.button.classList.add('correct');
-                    score++;
-                    scoreDisplay.textContent = `Score: ${score} / 4`;
-                } else {
-                    button.classList.add('wrong');
-                    firstChoice.button.classList.add('wrong');
-                    setTimeout(() => {
-                        button.classList.remove('wrong');
-                        firstChoice.button.classList.remove('wrong');
-                    }, 800);
-                }
-                resetSelection();
-            });
-        });
 
 
 

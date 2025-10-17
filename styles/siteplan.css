@@ -14,13 +14,36 @@
   top: 1rem;
   right: 1.5rem;
   z-index: 999;
-  color: #0077b6; /* Change to white if your header is dark */
+  color: #f5d000; /* Change to white if your header is dark */
+}
+
+.introduction,
+.purpose {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  text-align: left;
+
+}
+
+.introduction h2,
+.purpose h2 {
+
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.introduction p,
+.purpose p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 /*---------------------------------------
       📱 MOBILE VIEW
 ----------------------------------------*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* Show the hamburger icon only on mobile */
   .menu-toggle {
     display: block;
@@ -49,9 +72,10 @@
 
   .navbar a {
     font-size: 1.4rem;
-    color: white;
     text-decoration: none;
   }
+
+
 
   /* When the menu is toggled open */
   .navbar.show {
@@ -68,6 +92,11 @@
   .menu-toggle.hide {
     display: none;
   }
+}
+
+.websiteTitle {
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 /* Fade-in animation */

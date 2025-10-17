@@ -57,12 +57,16 @@
             color: #000;
         }
 
-        .correct {
-            background-color: #00ff7f !important;
-            color: #000 !important;
+        button.selected {
+            border: 2px solid blue;
         }
 
-        .wrong {
+        button.correct {
+            background-color: #0aaa5a !important;
+            color: #fff !important;
+        }
+
+        button.wrong {
             background-color: #ff4d6d !important;
             color: #fff !important;
         }

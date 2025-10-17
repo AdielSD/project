@@ -157,8 +157,7 @@ header {
 
 /* Text section */
 .introduction {
-  width: 100%;
-  padding: 8rem 7rem;
+  padding: 5rem 1.5rem !important;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -184,6 +183,8 @@ header {
 
 .introduction p {
   font-size: 1.1rem;
+  max-width: 90% !important;
+  margin: 0 auto !important;
   line-height: 1.6;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
@@ -201,8 +202,8 @@ header {
                PURPOSE
 ----------------------------------------*/
 .purpose {
-  width: 100%;
-  padding: 7rem 6rem;
+  
+  padding: 5rem 1.5rem !important;
   text-align: center;
   color: #fff;
   background: linear-gradient(135deg, #ffb703, #fb8500, #00bfff, #8ecae6);
@@ -226,6 +227,8 @@ header {
 }
 
 .purpose p {
+  max-width: 90% !important;
+  margin: 0 auto !important;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
